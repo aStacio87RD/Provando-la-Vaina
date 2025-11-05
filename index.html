@@ -3,76 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USDT Flow System - Gana mientras duermes</title>
+  <title>USDT Flow System | Ingresos Automáticos en Criptomonedas</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <style>
+    body {
+      background-color: #0a0f1f;
+      overflow-x: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+    .glow {
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  
+<body class="text-white font-sans">
+
+  <!-- Fondo animado -->
+  <div id="particles-js"></div>
+
   <!-- Header -->
-  <header class="text-center py-10 bg-gradient-to-r from-green-500 to-blue-600">
-    <h1 class="text-4xl font-bold mb-2">💰 USDT Flow System</h1>
-    <p class="text-lg">Genera ingresos automáticos en USDT cada semana</p>
+  <header class="text-center py-12">
+    <h1 class="text-5xl font-extrabold mb-3 glow">💸 USDT Flow System</h1>
+    <p class="text-gray-300 text-lg">Gana ingresos automáticos con estrategias de trading inteligente</p>
   </header>
 
-  <!-- Sección principal -->
-  <section class="max-w-5xl mx-auto py-16 px-6 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Tu dinero trabajando por ti</h2>
-    <p class="text-gray-300 mb-6">Nuestro sistema combina estrategias de trading automático con gestión de riesgo inteligente para generar ganancias semanales entre <span class="text-green-400 font-bold">5% y 12%</span>.</p>
-    
-    <a href="#planes" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full text-lg transition">Comienza Ahora</a>
+  <!-- Intro -->
+  <section class="max-w-4xl mx-auto text-center py-16 px-6 fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Haz que tu dinero fluya, incluso mientras duermes</h2>
+    <p class="text-gray-300 mb-6 leading-relaxed">
+      Nuestro sistema automatizado en <span class="text-green-400 font-semibold">USDT</span> trabaja las 24 horas gestionando inversiones seguras y rentables para ti.
+    </p>
+    <a href="#planes" class="bg-green-500 hover:bg-green-600 px-10 py-3 rounded-full text-lg font-bold transition">Comenzar Ahora</a>
   </section>
 
   <!-- Beneficios -->
-  <section class="bg-gray-800 py-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-      <div class="p-6 bg-gray-700 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">💎 Inversión Flexible</h3>
-        <p>Desde USDT $50 hasta $1000, elige el plan que mejor se adapte a ti.</p>
+  <section class="bg-gray-900/50 py-20 fade-in">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 text-center">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-2">🤖 100% Automatizado</h3>
+        <p>Genera ingresos pasivos con un sistema que opera por ti 24/7.</p>
       </div>
-      <div class="p-6 bg-gray-700 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">⚙️ Sistema Automatizado</h3>
-        <p>Tus ganancias se generan incluso mientras duermes.</p>
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-2">🔐 Control y Seguridad</h3>
+        <p>Administra tus fondos directamente desde Binance o TrustWallet.</p>
       </div>
-      <div class="p-6 bg-gray-700 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">🔒 Seguridad Total</h3>
-        <p>Controla tus fondos desde tu cuenta Binance o TrustWallet.</p>
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-2">💵 Ganancias Semanales</h3>
+        <p>Obtén retornos constantes del <strong>5% al 12%</strong> cada semana.</p>
       </div>
     </div>
   </section>
 
   <!-- Planes -->
-  <section id="planes" class="max-w-6xl mx-auto py-16 px-6 text-center">
-    <h2 class="text-3xl font-semibold mb-10">Planes de Inversión</h2>
+  <section id="planes" class="max-w-6xl mx-auto py-20 px-6 text-center fade-in">
+    <h2 class="text-3xl font-semibold mb-10 glow">Planes de Inversión</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+      
+      <div class="bg-gray-800/80 p-8 rounded-2xl shadow-lg backdrop-blur-sm">
         <h3 class="text-xl font-bold mb-2">Plan Básico</h3>
         <p class="text-green-400 text-3xl font-bold mb-4">USDT 50</p>
-        <p>Ganancia semanal estimada: <strong>5%</strong></p>
+        <p>Ganancia estimada: <strong>5%</strong> semanal</p>
+        <a href="https://t.me/usdtflowsystem" target="_blank" class="mt-6 inline-block bg-green-500 px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">Unirme</a>
       </div>
-      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg border-2 border-green-500">
+
+      <div class="bg-gray-800/80 p-8 rounded-2xl shadow-lg border-2 border-green-500 backdrop-blur-sm">
         <h3 class="text-xl font-bold mb-2">Plan Pro</h3>
         <p class="text-green-400 text-3xl font-bold mb-4">USDT 200</p>
-        <p>Ganancia semanal estimada: <strong>8%</strong></p>
+        <p>Ganancia estimada: <strong>8%</strong> semanal</p>
+        <a href="https://t.me/usdtflowsystem" target="_blank" class="mt-6 inline-block bg-green-500 px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">Activar Plan</a>
       </div>
-      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Plan Elite</h3>
+
+      <div class="bg-gray-800/80 p-8 rounded-2xl shadow-lg backdrop-blur-sm">
+        <h3 class="text-xl font-bold mb-2">Plan Élite</h3>
         <p class="text-green-400 text-3xl font-bold mb-4">USDT 1000</p>
-        <p>Ganancia semanal estimada: <strong>12%</strong></p>
+        <p>Ganancia estimada: <strong>12%</strong> semanal</p>
+        <a href="https://t.me/usdtflowsystem" target="_blank" class="mt-6 inline-block bg-green-500 px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">Invertir Ahora</a>
       </div>
+
     </div>
   </section>
 
   <!-- CTA Final -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-green-500">
-    <h2 class="text-3xl font-semibold mb-4">¿Listo para hacer crecer tu capital?</h2>
-    <p class="text-lg mb-8">Únete a cientos de inversores que ya generan ingresos con USDT Flow System.</p>
-    <a href="https://t.me/usdtflowsystem" target="_blank" class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition">Únete al Canal de Telegram</a>
+  <section class="text-center py-24 bg-gradient-to-r from-green-600 to-blue-600 fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Únete al Futuro Financiero 🌐</h2>
+    <p class="text-lg mb-8">Accede al canal oficial y comienza a generar ingresos con USDT Flow System.</p>
+    <a href="https://t.me/usdtflowsystem" target="_blank" class="bg-white text-green-700 px-10 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition">Ir al Canal de Telegram</a>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-8 text-gray-400 text-sm">
-    © 2025 USDT Flow System · Todos los derechos reservados
+  <footer class="text-center py-8 text-gray-500 text-sm">
+    © 2025 USDT Flow System · Desarrollado por Pedro Astacio
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Partículas
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#00ffcc" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.6 },
+        "size": { "value": 3 },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": { "onhover": { "enable": true, "mode": "repulse" } },
+        "modes": { "repulse": { "distance": 100 } }
+      }
+    });
+
+    // Animaciones de entrada
+    gsap.utils.toArray('.fade-in').forEach((el, i) => {
+      gsap.to(el, {opacity: 1, y: 0, duration: 1.2, delay: i * 0.3, ease: "power2.out"});
+    });
+  </script>
 
 </body>
 </html>
